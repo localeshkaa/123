@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User {{data['username']}}</title>
+</head>
+<body bgcolor="#FFFFFF">
+    <h1>{{data['username']}}</h1><br>
+    <h3>ID: {{data['id']}}</h3>
+    <h3>Level {{data['lvl']}}</h3>
+    <h3>Fraction {{data['frac']}}</h3>
+    <form action="" method="post">
+        <p>
+            <label>Change username:</label>
+            <input type="text" name="username"><br>
+            <label>Change fraction:</label><br>
+            <input type="radio" name="fraction" value="Blue" id="Blue">
+            <label for="Blue">Blue</label><br>
+            <input type="radio" name="fraction" value="Red" id="Red">
+            <label for="Red">Red</label><br>
+            <input type="radio" name="fraction" value="Green" id="Green">
+            <label for="Green">Green</label><br>
+            <input type="radio" name="fraction" value="Black" id="Black">
+            <label for="Black">Black</label><br>
+            <input type="radio" name="fraction" value="White" id="White">
+            <label for="White">White</label><br>
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+    <br>
+    <h3><a href ="/users/">Back</a></h3>
+</body>
+</html>
